@@ -1,5 +1,12 @@
 * {
 	font-family:Helvetica;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	margin:0;
+	padding:0;
 }
 
 /***Homepage***/
@@ -12,7 +19,7 @@
 
 .profileimg {
 	display:block;
-	background-image: url(../images/profilepic.png);
+	background-image:url(../images/profilepic.png);
 	background-size:contain;
 	border-radius:100%;
 	height:300px;
@@ -36,11 +43,51 @@ a:hover {
 }
 
 /***Mad Libs***/
+#madlibcontain {
+	background-image:url(../images/pixelbg.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+	height:100vh;
+	width:100%;
+	text-align:center;
+}
 .blank {
 	background-color:orange;
 	color:white;
 }
 
-.returnhome {
-	margin:10px 0 10px 0;
+.madlibheader {
+	font-family:"Varela Round";
+	color:white;
+	padding-top:40px;
+	font-size:2.5em;
+}
+
+.madlibtxt {
+	width:40%;
+	color:white;
+	line-height:35px;
+	margin:auto;
+}
+
+.resetml {
+	margin:15px 0 7.5px 0;
+	padding:5px;
+	border-radius:2.5px;
+	background-color:white;
+	border-color:none;
+	font-size:10px;
+	font-weight:bold;
+	border-style:solid;
+	border:none;
+	color:#1abab6;
+}
+
+.libword {
+	color:#32eae5;
+}
+
+.bottomtxt {
+	margin-top:15px;
+	font-size:.2em;
 }
