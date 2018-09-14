@@ -1,23 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kenny Seo</title>
-	<link href="css/normalize.css" type="text/css" rel="Stylesheet">
-	<link href="css/main.css" type="text/css" rel="Stylesheet">
+  <title></title>
+  <link href="css/main.css" rel="Stylesheet" type="text/css">
 </head>
 <body>
-	<div id="container">
-	<div class="profileimg"></div>
-	<h2 class="orangecol">KENNY SEO</h2>
-	<div class="info">
-	<p>Born in Seoul, Korea but currently living in Sunnyside, Queens</p>
-	<p><span class="orangecol">Loves</span>: Board games, video games, dogs, lofi music</p>
-	<p>Web Design 2 Projects: <a href="madlibs.html">Mad Lib</a></p>
-	</div>
-	</div>
-<script src="js/app.js" type="text/javascript"></script>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-</style>
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="images/1.pdf" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/2.pdf" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/5.pdf" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/6.pdf" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/7new.pdf" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/8.pdf" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/9new.pdf" onclick="openModal();currentSlide(9)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/10.pdf" onclick="openModal();currentSlide(10)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/11.pdf" onclick="openModal();currentSlide(11)" class="hover-shadow">
+  </div>  
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 11</div>
+      <img src="images/1.pdf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 11</div>
+      <img src="images/2.pdf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 11</div>
+      <img src="images/5.pdf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 11</div>
+      <img src="images/6.pdf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 11</div>
+      <img src="images/7new.pdf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 11</div>
+      <img src="images/8.pdf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 11</div>
+      <img src="images/9new.pdf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 11</div>
+      <img src="images/10.pdf" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 11</div>
+      <img src="images/11.pdf" style="width:100%">
+    </div>
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column columnedit">
+      <img class="demo" src="images/1.pdf" onclick="currentSlide(1)">
+    </div>
+
+    <div class="column columnedit">
+      <img class="demo" src="images/2.pdf" onclick="currentSlide(2)">
+    </div>
+
+
+
+    <div class="column columnedit">
+      <img class="demo" src="images/5.pdf" onclick="currentSlide(3)">
+    </div>
+
+    <div class="column columnedit">
+      <img class="demo" src="images/6.pdf" onclick="currentSlide(4)">
+    </div>
+
+    <div class="column columnedit">
+      <img class="demo" src="images/7new.pdf" onclick="currentSlide(5)">
+    </div>
+
+    <div class="column columnedit">
+      <img class="demo" src="images/8.pdf" onclick="currentSlide(6)">
+    </div>
+
+    <div class="column columnedit">
+      <img class="demo" src="images/9new.pdf" onclick="currentSlide(7)">
+    </div>
+
+    <div class="column columnedit">
+      <img class="demo" src="images/10.pdf" onclick="currentSlide(8)">
+    </div>
+
+    <div class="column columnedit">
+      <img class="demo" src="images/11.pdf" onclick="currentSlide(9)">
+    </div>
+
+  </div>
+</div>
+<script src="js/app.js"></script>
 </body>
 </html>

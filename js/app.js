@@ -1,27 +1,39 @@
-var firstWord = ["read", "listen to music", "walk", "sleep"],
-	secondWord = ["hike", "dance", "jog", "go to the park"],
-	thirdWord = ["pizza", "pasta", "pancakes", "burgers"],
-	fourthWord = ["cake", "pie", "ice cream", "fruits"],
-	fifthWord = ["play", "run", "hang", "chill"],
-	sixthWord = ["Max", "Kristin", "Paxton", "Isaiah"],
-	seventhWord = ["play games", "watch television", "play with my dog", "sleep in"];
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
 
-		document.getElementById("firstword").textContent = firstWord[Math.floor(Math.random() * Math.floor(firstWord.length))];
-		document.getElementById("secondword").textContent = secondWord[Math.floor(Math.random() * Math.floor(secondWord.length))];
-		document.getElementById("thirdword").textContent = thirdWord[Math.floor(Math.random() * Math.floor(firstWord.length))];
-		document.getElementById("fourthword").textContent = fourthWord[Math.floor(Math.random() * Math.floor(secondWord.length))];
-		document.getElementById("fifthword").textContent = fifthWord[Math.floor(Math.random() * Math.floor(firstWord.length))];
-		document.getElementById("sixthword").textContent = sixthWord[Math.floor(Math.random() * Math.floor(secondWord.length))];
-		document.getElementById("seventhword").textContent = seventhWord[Math.floor(Math.random() * Math.floor(firstWord.length))];
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
 
-var funcHolder = {
-	resetML : function() {
-		document.getElementById("firstword").textContent = firstWord[Math.floor(Math.random() * Math.floor(firstWord.length))];
-		document.getElementById("secondword").textContent = secondWord[Math.floor(Math.random() * Math.floor(secondWord.length))];
-		document.getElementById("thirdword").textContent = thirdWord[Math.floor(Math.random() * Math.floor(firstWord.length))];
-		document.getElementById("fourthword").textContent = fourthWord[Math.floor(Math.random() * Math.floor(secondWord.length))];
-		document.getElementById("fifthword").textContent = fifthWord[Math.floor(Math.random() * Math.floor(firstWord.length))];
-		document.getElementById("sixthword").textContent = sixthWord[Math.floor(Math.random() * Math.floor(secondWord.length))];
-		document.getElementById("seventhword").textContent = seventhWord[Math.floor(Math.random() * Math.floor(firstWord.length))];
-	}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
