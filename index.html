@@ -1,143 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <link href="css/main.css" rel="Stylesheet" type="text/css">
+	<title>ONE ZERO THREE | Kickstarter Game</title>
+	<link href="css/normalize.css" type="text/css" rel="Stylesheet">
+	<link href="css/main.css" type="text/css" rel="Stylesheet">
 </head>
 <body>
-<!-- Images used to open the lightbox -->
-<div class="row">
-  <div class="column">
-    <img src="images/1.pdf" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/2.pdf" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/5.pdf" onclick="openModal();currentSlide(5)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/6.pdf" onclick="openModal();currentSlide(6)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/7new.pdf" onclick="openModal();currentSlide(7)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/8.pdf" onclick="openModal();currentSlide(8)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/9new.pdf" onclick="openModal();currentSlide(9)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/10.pdf" onclick="openModal();currentSlide(10)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/11.pdf" onclick="openModal();currentSlide(11)" class="hover-shadow">
-  </div>  
 
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 11</div>
-      <img src="images/1.pdf" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 11</div>
-      <img src="images/2.pdf" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">5 / 11</div>
-      <img src="images/5.pdf" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">6 / 11</div>
-      <img src="images/6.pdf" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">7 / 11</div>
-      <img src="images/7new.pdf" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">8 / 11</div>
-      <img src="images/8.pdf" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">9 / 11</div>
-      <img src="images/9new.pdf" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">10 / 11</div>
-      <img src="images/10.pdf" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">11 / 11</div>
-      <img src="images/11.pdf" style="width:100%">
-    </div>
-
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column columnedit">
-      <img class="demo" src="images/1.pdf" onclick="currentSlide(1)">
-    </div>
-
-    <div class="column columnedit">
-      <img class="demo" src="images/2.pdf" onclick="currentSlide(2)">
-    </div>
-
-
-
-    <div class="column columnedit">
-      <img class="demo" src="images/5.pdf" onclick="currentSlide(3)">
-    </div>
-
-    <div class="column columnedit">
-      <img class="demo" src="images/6.pdf" onclick="currentSlide(4)">
-    </div>
-
-    <div class="column columnedit">
-      <img class="demo" src="images/7new.pdf" onclick="currentSlide(5)">
-    </div>
-
-    <div class="column columnedit">
-      <img class="demo" src="images/8.pdf" onclick="currentSlide(6)">
-    </div>
-
-    <div class="column columnedit">
-      <img class="demo" src="images/9new.pdf" onclick="currentSlide(7)">
-    </div>
-
-    <div class="column columnedit">
-      <img class="demo" src="images/10.pdf" onclick="currentSlide(8)">
-    </div>
-
-    <div class="column columnedit">
-      <img class="demo" src="images/11.pdf" onclick="currentSlide(9)">
-    </div>
-
-  </div>
+<div id="ksContainer">
+	<div id="candleimage">
+		<img src="images/Candles.gif">
+	</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/grLqq7CtpVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<div id="gameDesc">
+	</div>
+	<div id="descContain">
+		<div class="ksDescLass">
+			<h2>PLEDGE AU$30 OR MORE</h2>
+			<div id="ksDesc1" class="ksDescSize">
+			</div>
+			<p class="inText">Includes:</p>
+			<div class="included">
+				<p>- Digital wallpaper pack</p>
+				<p>- Your name in the game credits</p>
+				<p>- Get the game view Steam</p>
+			</div>
+			<p>Estimated Delivery Date : December 2018</p>
+		</div>
+		<div class="ksDescLass">
+			<h2>PLEDGE AU$45 OR MORE</h2>
+			<div id="ksDesc2" class="ksDescSize">
+			</div>
+			<p class="inText">Includes:</p>
+			<div class="included">
+				<p>- Digital wallpaper pack</p>
+				<p>- Your name and 20 word message</p>
+				<p>- Get the game via Steam</p>
+			</div>
+			<p>Estimated Delivery Date : December 2018</p>
+		</div>
+		<div class="ksDescLass">
+			<h2>PLEDGE AU$100 OR MORE</h2>
+			<div id="ksDesc3" class="ksDescSize">
+			</div>
+			<p class="inText">Includes:</p>
+			<div class="included">
+				<p>- Digital wallpaper pack</p>
+				<p>- Your name and 20 word message</p>
+				<p>- The '103 Pack' (See description)</p>
+			</div>
+			<p>Estimated Delivery Date : December 2018</p>
+		</div>
+		<div id="currentlyPledged">
+		<h1>Currently $<span id="currPledged"></span> pledged from <span id="currentBackers"></span> Backers!</h1>
+		</div>
+		<p id="demo"></p>
+	</div>
 </div>
 <script src="js/app.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
+</style> 
 </body>
 </html>
