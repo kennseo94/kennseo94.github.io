@@ -19,6 +19,11 @@ ul {
 	color:white;
 }
 
+h1 {
+	margin:unset;
+	padding:unset;
+}
+
 /*container*/
 #container {
 	width:1250px;
@@ -82,7 +87,6 @@ ul {
 	float:right;
 	margin-right:30px;
 	margin-top:10px;
-	padding-bottom:10px;
 }
 
 .ingredients_title {
@@ -129,8 +133,19 @@ ul {
 
 .recipe_name {
 	text-align:center;
+	background-color:#E8580B;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 .brief_info_title {
 	padding-right:-10px;
+}
+
+.bottom_color {
+	background-color:#E8580B;
+	display:inline-block;
+	width:100%;
+	margin-top:25px;
+	height:50px;
 }
