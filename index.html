@@ -1,117 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Word Guessing Game</title>
+	<title>Cookbook Recipe</title>
 	<link href="css/normalize.css" type="text/css" rel="Stylesheet">
 	<link href="css/main.css" type="text/css" rel="Stylesheet">
 </head>
 <body>
-<div id="fullBG">
-  <div class="blocker">
-  </div>
-<div id="phone">
-  <div class="innerScreenCurve"></div>
-  <div class="innerScreenCurve2"></div>
-  <div class="ledlight"></div>
-  <div class="cameralight"></div>
-  <div class="camera"></div>
-  <div class="earlistener"></div>
-  <div class="innerScreen">
+<div id="container">
+		<ul id="nav_menu">
+			<li class="recipes first_recipe"><span class="recipe_title">Spider Cookies</span></li>
+			<li class="brief_info first_brief"><span class="brief_info_title">These spooky spider cookies are entertaining for little ones and adults to make together. From pushing chocolate candies into warm cookies, to drawing spider legs with chocolate and making silly eyes, there's plenty of fun for everyone.</span></li>
+			<li class="recipes second_recipe"><span class="recipe_title">Pumpkin Rolls</span></li>
+			<li class="brief_info second_brief"><span class="brief_info_title">Make a batch of Ree's fall-inspired cinnamon rolls for brunch this weekend, or as a welcome-home snack for your marauding trick-or-treaters.</span>
+			<li class="recipes third_recipe"><span class="recipe_title">Mummy Pies</span></li>
+			<li class="brief_info third_brief"><span class="brief_info_title">This easy, Halloween-inspired recipe can be made ahead and served later as a scary-good party dessert.</span></li>
+		</ul>
+		<div class="full_recipe_contain">
+		</div>
+<div id="spidercookiesentire">
+	<div>
 
-    <div class="topStatus">
-      <div class="battery">
-        <div class="batteryLife1"></div>
-        <div class="batteryLife2"></div>
-        <div class="batteryLife3"></div>
-        <div class="batteryLife4"></div>
-        <div class="batteryLife5"></div>
-      </div>
-    </div>
-
-    <div class="proPic">
-    	<img src="images/locked.png" class="statusFit lockedImage show" id="lockedImage">
-    	<img src="images/access.png" class="statusFit accessImage hidden" id="accessImage">
-    	<img src="images/denied.png" class="statusFit deniedImage hidden" id="deniedImage">
-    </div>
-
-    <div class="guessBox">
-      <div id="letter1" class="guessLetter">-</div>
-      <div id="letter2" class="guessLetter">-</div>
-      <div id="letter3" class="guessLetter">-</div>
-      <div id="letter4" class="guessLetter">-</div>
-      <div id="letter5" class="guessLetter">-</div>
-      <div id="letter6" class="guessLetter">-</div>
-      <div id="letter7" class="guessLetter">-</div>
-    </div>
-
-    <div id="lockStatus"><p id="winLoseStatus">LOCKED</p></div>
-
-    <div class="keyboardEntire">
-      <div class="keyboardAuto">
-      </div>
-      <div class="row row1">
-        <div class="keyTile" id="Q" onClick="letterClicked(this.id)"><p id="Qkey">Q</p></div>
-        <div class="keyTile" id="W" onClick="letterClicked(this.id)"><p id="Wkey">W</p></div>
-        <div class="keyTile" id="E" onClick="letterClicked(this.id)"><p id="Ekey">E</p></div>
-        <div class="keyTile" id="R" onClick="letterClicked(this.id)"><p id="Rkey">R</p></div>
-        <div class="keyTile" id="T" onClick="letterClicked(this.id)"><p id="Tkey">T</p></div>
-        <div class="keyTile" id="Y" onClick="letterClicked(this.id)"><p id="Ykey">Y</p></div>
-        <div class="keyTile" id="U" onClick="letterClicked(this.id)"><p id="Ukey">U</p></div>
-        <div class="keyTile" id="I" onClick="letterClicked(this.id)"><p id="Ikey">I</p></div>
-        <div class="keyTile" id="O" onClick="letterClicked(this.id)"><p id="Okey">O</p></div>
-        <div class="keyTile" id="P" onClick="letterClicked(this.id)"><p id="Pkey">P</p></div>
-      </div>
-      <div class="row row2">
-        <div class="keyTile" id="A" onClick="letterClicked(this.id)"><p id="Akey">A</p></div>
-        <div class="keyTile" id="S" onClick="letterClicked(this.id)"><p id="Skey">S</p></div>
-        <div class="keyTile" id="D" onClick="letterClicked(this.id)"><p id="Dkey">D</p></div>
-        <div class="keyTile" id="F" onClick="letterClicked(this.id)"><p id="Fkey">F</p></div>
-        <div class="keyTile" id="G" onClick="letterClicked(this.id)"><p id="Gkey">G</p></div>
-        <div class="keyTile" id="H" onClick="letterClicked(this.id)"><p id="Hkey">H</p></div>
-        <div class="keyTile" id="J" onClick="letterClicked(this.id)"><p id="Jkey">J</p></div>
-        <div class="keyTile" id="K" onClick="letterClicked(this.id)"><p id="Kkey">K</p></div>
-        <div class="keyTile" id="L" onClick="letterClicked(this.id)"><p id="Lkey">L</p></div>
-      </div>
-      <div class="row row3">
-        <div class="keyTile" id="Z" onClick="letterClicked(this.id)"><p id="Zkey">Z</p></div>
-        <div class="keyTile" id="X" onClick="letterClicked(this.id)"><p id="Xkey">X</p></div>
-        <div class="keyTile" id="C" onClick="letterClicked(this.id)"><p id="Ckey">C</p></div>
-        <div class="keyTile" id="V" onClick="letterClicked(this.id)"><p id="Vkey">V</p></div>
-        <div class="keyTile" id="B" onClick="letterClicked(this.id)"><p id="Bkey">B</p></div>
-        <div class="keyTile" id="N" onClick="letterClicked(this.id)"><p id="Nkey">N</p></div>
-        <div class="keyTile" id="M" onClick="letterClicked(this.id)"><p id="Mkey">M</p></div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="homebutton" onClick="reloadPage()">
-    <div class="homebuttoninner" id="restartGame" onClick="location.reload()"></div>
-  <div>
-</div>
-</div>
-</div>
-
-
-<div class="letterContainer1 c2">
-	<div class="correctTitle">
-		<h1>CORRECT LETTERS</h1>
 	</div>
-	<div class="c2b">
-		<p class="listOfCorrect"></p>
+
+	<div id="full_recipe_contain">
+		<img src="images/spidercookies.jpg" class="food_pic">
+		<h1 class="recipe_name">Peanut Butter Spider Cookies</h1>
+		<div id="spider_cookies_recipe" class="information_contain">
+			<h2 class="ingredients_title">Ingredients:</h2>
+			<ul class="ingredients_list">
+				<li class="ingred_item">One 5-ounce box small ball-shaped chocolates, such as malted milk balls</li>
+				<li class="ingred_item">3/4 cup all-purpose flour</li>
+				<li class="ingred_item">1/4 teaspoon baking soda</li>
+				<li class="ingred_item">Pinch of fine salt</li>
+				<li class="ingred_item">1/2 cup granulated sugar</li>
+				<li class="ingred_item">4 tablespoons unsalted butter, at room temperature</li>
+				<li class="ingred_item">1/2 teaspoon pure vanilla extract</li>
+				<li class="ingred_item">1 large egg</li>
+				<li class="ingred_item">1/2 cup smooth peanut butter</li>
+				<li class="ingred_item">2 ounces semisweet chocolate</li>
+				<li class="ingred_item">1 small tube white cake decorating gel</li>
+			</ul>
+		</div>
+
+		<div id="spider_cookies_direction" class="information_contain">
+			<h2 class="directions_title">Directions:</h2>
+			<ul class="direction_list">
+			<li class="direction_step"><span class="numbered">1.</span> Position oven racks in the top and bottom thirds of the oven and preheat to 375 degrees fahrenheit. Line 2 baking sheets with parchment paper.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">2.</span> Separate the chocolate candy balls into larger and smaller balls. The larger balls will make up the spider bodies and the smaller balls the heads.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">3.</span> Whisk together the flour, baking soda and salt in a small bowl. Cream the sugar and butter in a medium bowl with an electric mixer on medium-high speed until light and fluffy, 3 to 4 minutes. Add the vanilla and egg and mix until thoroughly combined, about 1 minute. Add the peanut butter and mix until creamy, about 1 minute. Turn the mixer speed down to low and add half of the flour mixture. Beat on medium until incorporated, then turn the speed down to low again and add the rest of the flour mixture. Beat on medium until incorporated.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">4.</span> Roll the dough by hand into 1-inch balls, place about 1 inch apart on the prepared baking sheets and bake, rotating the pans halfway through, until the cookies are light golden brown and have spread to about 2 incheswide, about 16 minutes. The cookies are done when they smell very peanut buttery and the tops feel dry and slightly firm when pressed with fingers.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">5.</span> Meanwhile, melt the chocolate over a double boiler. Remove from the heat and let cool briefly so that it is slightly thickened but still pipeable.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">6.</span> When the cookies are done, remove them from the oven and transfer them to a cooling rack. Immediately push 2 chocolate candies directly into each hot cookies, putting a smaller chocolate ball toward the edge of the cookie and a larger chocolate ball directly behind it in the center of the cookie.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">7.</span> When the melted chocolate has thickened slightly, put it into a plastic bag and cut a small hole in the corner to create a piping bag. Pipe 8 legs on each cookie, starting from the point where the 2 chocolate candies meet. Pipe the front 4 legs so that they curve up toward the head and the back 4 legs so that they curve backward beyond the body. Reserve the remaining chocolate in the piping bag for the pupils of the eyes.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">8.</span>To make eyes, pipe two 1/4-inch circles on the "heads" of each spider with the cake decorating gel. Pipe a tiny dot of the reserved melted chocolate in the center of each to make the pupils.</li>
+			</ul>
+		</div>
+
+
+
 	</div>
+
 </div>
-<div class="letterContainer1 lc2">
-	<div class="incorrectTitle">
-		<h1>INCORRECT LETTERS</h1>
+
+<div id="pumpkinrollsentire">
+	<div id="full_recipe_contain">
+		<img src="images/pumpkinrolls.jpg" class="food_pic">
+		<h1 class="recipe_name">Pumpkin Rolls</h1>
+		<div id="spider_cookies_recipe" class="information_contain">
+			<h2 class="ingredients_title">Ingredients:</h2>
+			<ul class="ingredients_list">
+				<li class="ingred_item">1 stick butter (1/2 cup), room temperature</li>
+				<li class="ingred_item">1/2 teaspoon vanilla extract</li>
+				<li class="ingred_item">3 large eggs</li>
+				<li class="ingred_item">1 cup granulated sugar</li>
+				<li class="ingred_item">2/3 cup canned pumpkin</li>
+				<li class="ingred_item">1 teaspoon lemon juice</li>
+				<li class="ingred_item">3/4 cup all-purpose flour</li>
+				<li class="ingred_item">1 teaspoon ground ginger</li>
+				<li class="ingred_item">1/2 teaspoon salt</li>
+				<li class="ingred_item">1 teaspoon baking powder</li>
+				<li class="ingred_item">2 teaspoons ground cinnamon</li>
+				<li class="ingred_item">1 cup pecans, finely chopped</li>
+				<li class="ingred_item">1 cup confectioners' sugar, plus more for sprinkling</li>
+			</ul>
+		</div>
+
+		<div id="spider_cookies_direction" class="information_contain">
+			<h2 class="directions_title">Directions:</h2>
+			<ul class="direction_list">
+			<li class="direction_step">Preheat the oven to 350 degrees F. Grease and flour a 17 1/2- by 12 1/2-inch jellyroll pan. With an electric mixer, beat the eggs, granulated sugar, pumpkin and lemon juice until smooth. Sift together the flour, ginger, salt, baking powder and cinnamon. Add the sifted ingredients to the egg mixture and blend until fully combined. Spread the batter in the jellyroll pan. Sprinkle the dough with the chopped pecans. Bake until a cake tester inserted in the center comes out clean, 14 minutes. Let the cake cool in the pan for 5 minutes. Invert the cake onto a wire rack. Sprinkle some of the confectioner' sugar on a large tea towel and carefully transfer the warm cake to the towel, folding the sides of the towel over the cake. Roll the cake up in the towel and cool in the refrigerator thoroughly for about 45 minutes. With an electric mixer, combine the confectioners' sugar, cream cheese, butter and vanilla and beat until smooth. Carefully unroll the cooled cake and spread the mixture on top of the cake. Gently re-roll the cake up and refrigerate it until you're ready to slice and serve. Dust with confectioners' sugar just before serving.</li>
+			</ul>
+		</div>
+
+		
+
 	</div>
-	<div class="lc2b">
-		<p class="listOfIncorrect"></p>
-	</div>
+
 </div>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Kodchasan');
-</style>
+
+<div id="mummypiesentire">
+	<div id="full_recipe_contain">
+		<img src="images/mummupies.jpg" class="food_pic">
+		<h1 class="recipe_name">Mummy Pies</h1>
+		<div id="spider_cookies_recipe" class="information_contain">
+			<h2 class="ingredients_title">Ingredients:</h2>
+			<ul class="ingredients_list">
+				<li class="ingred_item">1/4 cup canned pumpkin</li>
+				<li class="ingred_item">2 tablespoons sweetened condensed milk</li>
+				<li class="ingred_item">1/4 teaspoon ground cinnamon</li>
+				<li class="ingred_item">1/4 teaspoon ground ginger</li>
+				<li class="ingred_item">1/4 teaspoon ground nutmeg</li>
+				<li class="ingred_item">Kosher salt</li>
+				<li class="ingred_item">2 refrigerated pie crusts, thawed if frozen</li>
+				<li class="ingred_item">All-purpose flour, for dusting</li>
+				<li class="ingred_item">1 large egg</li>
+				<li class="ingred_item">12 raisins</li>
+				<li class="ingred_item">1/2 cup confectioners' sugar, optional</li>
+			</ul>
+		</div>
+
+		<div id="spider_cookies_direction" class="information_contain">
+			<h2 class="directions_title">Directions:</h2>
+			<ul class="direction_list">
+			<li class="direction_step"><span class="numbered">1.</span> Preheat the oven to 350 degrees F.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">2.</span> Add the pumpkin, sweetened condensed milk, cinnamon, ginger, nutmeg and a pinch of salt to a medium bowl and stir to combine.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">3.</span> Roll out 1 pie crust on a lightly floured surface with a rolling pin to form a rectangle about 9 inches by 12 inches. Square off the crust with a knife, reserving the scraps for decorating. Cut the pie crust into 6 equal rectangles, each about 3 inches by 6 inches. Transfer to a parchment-lined baking sheet.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">4.</span> Roll out the other pie crust to the same thickness as the first. Cut into thin strips about 1/4 inch wide and 7 inches long. Repeat with the reserved dough scraps. Transfer the strips to a parchment-lined baking sheet.</li>
+			<br>
+			<li class="direction_step"><span class="numbered">5.</span> Add 1 heaping tablespoon of the filling to the center of each rectangular crust. Use the back of a spoon to spread out the filling, leaving about a 1/2-inch border around the edges. </li>
+			<br>
+			<li class="direction_step"><span class="numbered">6.</span> Lightly beat the egg with 1 tablespoon water in a small bowl. Use a pastry brush to brush the edges of the pies with the egg wash. Layer the strips of dough, varying the angle of each strip to create a "mummy" look. Seal the edges with a fork and use a paring knife to trim the overhang. Lightly brush the tops of the hand pies with the egg wash. Add 2 raisins to each hand pie for the eyes. </li>
+			<br>
+			<li class="direction_step"><span class="numbered">7.</span> Bake, rotating the pan halfway through for even color, until golden brown, 20 to 25 minutes. Cool on a baking rack slightly, about 5 minutes. </li>
+			<br>
+			<li class="direction_step"><span class="numbered">8.</span> Serve as is or decorate with a simple icing. Combine the confectioners' sugar in a small bowl with 1/2 teaspoon water. Stir until smooth and glossy. Transfer the icing to a resealable plastic bag and snip off the corner. Pipe the icing onto the hand pies using the stripes of pie crust as a guide. Serve.</li>
+			</ul>
+		</div>
+
+		
+
+	</div>
+
+</div>
+
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/app.js"></script>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+</style>
 </body>
 </html>
