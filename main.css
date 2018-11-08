@@ -180,3 +180,7 @@ h1, h2, h3, h4, h5, h6, ul {
   text-align:center;
   margin-top:40px;
 }
+
+.two_sider {
+  display:inline-block;
+}
