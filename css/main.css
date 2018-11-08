@@ -2,14 +2,9 @@
   font-family:"Roboto Mono";
 }
 
-ul {
+h1, h2, h3, h4, h5, h6, ul {
   margin:unset;
   padding:unset;
-}
-
-h3 {
-  padding:unset;
-  margin:unset;
 }
 
 #main_container {
@@ -19,7 +14,7 @@ h3 {
 }
 
 #about_me {
-  width:30%;
+  width:470px;
   height:100vh;
   background-color:#dcf1e6;
   position:fixed;
@@ -35,7 +30,7 @@ h3 {
   width:85%;
   height:300px;
   margin:10px 0;
-  background-color:aliceblue;
+  background-color:#dcf1e6;
   display:block;
   position:relative;
   overflow:hidden;
@@ -72,29 +67,29 @@ h3 {
 
 .cookbook {
   background-color:rgba(0,0,0,.8);
-  background-image:url("https://kennseo94.github.io/images/spidercookies.jpg");
+  /*background-image:url("https://kennseo94.github.io/images/spidercookies.jpg");*/
   background-size:cover;
   background-repeat:no-repeat;
 }
 
 .rugsusa {
   background-color:rgba(0,0,0,.8);
-  background-image:url("http://i63.tinypic.com/9fnqlz.png");
+  /*background-image:url("http://i63.tinypic.com/9fnqlz.png");*/
   background-size:cover;
   background-repeat:no-repeat;
 }
 
 .onezerothree {
   background-color:rgba(0,0,0,.8);
-  background-image:url("https://ksr-ugc.imgix.net/assets/021/898/204/98aa2d90eb640954b030cdf0f84660ad_original.jpg?ixlib=rb-1.1.0&crop=faces&w=1552&h=873&fit=crop&v=1533377647&auto=format&frame=1&q=92&s=bfbf9ba1b324c19ec8decbe811555075");
-  background-size:cover;
+/*  background-image:url("https://ksr-ugc.imgix.net/assets/021/898/204/98aa2d90eb640954b030cdf0f84660ad_original.jpg?ixlib=rb-1.1.0&crop=faces&w=1552&h=873&fit=crop&v=1533377647&auto=format&frame=1&q=92&s=bfbf9ba1b324c19ec8decbe811555075");
+*/  background-size:cover;
   background-repeat:no-repeat;
 }
 
 .guesser {
   background-color:rgba(0,0,0,.8);
-  background-image:url("http://i63.tinypic.com/2vw9vdf.png");
-  background-size:cover;
+/*  background-image:url("http://i63.tinypic.com/2vw9vdf.png");
+*/  background-size:cover;
   background-repeat:no-repeat;
 }
 
@@ -114,10 +109,69 @@ h3 {
   display:none;
 }
 
-/*.work_tile:hover .work_title {
+#nav_bar a {
+  text-decoration:none;
   display:block;
+  width:100%;
+  height:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:black;
 }
 
-.work_tile:hover .work_descript {
-  display:block;
-}*/
+.nav_item {
+  width:100px;
+  margin:auto;
+  list-style-type:none;
+}
+
+.github_button {
+  width:105px;
+  height:25px;
+  border-radius:20px;
+  background-image:url("../images/github-logo.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  background-color:white;
+  margin:auto;
+  margin-top:10px;
+}
+
+.aboutmebox {
+  width:60%;
+  font-size:.8em;
+}
+
+.aboutmebox p {
+  line-height:17.5px;
+}
+
+.contact_me_line {
+  font-size:.8em;
+}
+
+.hi_me {
+  font-size:3em;
+  margin-top:20px;
+}
+
+::selection {
+  background:#dcf1e6;
+}
+
+::-moz-selection {
+  background:#dcf1e6;
+}
+
+#skill_list {
+  list-style-type:none;
+}
+
+#skill_list li {
+  height:100px;
+  width:100px;
+  background-color:#dcf1e6;
+  display:inline-block;
+  margin-top:15px;
+}
