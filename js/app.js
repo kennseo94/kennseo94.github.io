@@ -1,41 +1,26 @@
 $(document).ready(function(){
-	$("#spidercookiesentire").hide();
-	$("#pumpkinrollsentire").hide();
-	$("#mummypiesentire").hide();
+	$(".work_title").hide();
 
-	$(".brief_info").hide();
-
-	$(".first_recipe").click(function(){
-		$(".first_recipe").addClass("active");
-		$(".second_recipe").removeClass("active");
-		$(".third_recipe").removeClass("active");
-		$(".first_brief").slideDown(500);
-		$(".second_brief").hide();
-		$(".third_brief").hide();
-		$("#pumpkinrollsentire").hide();
-		$("#mummypiesentire").hide();
-		$("#spidercookiesentire").fadeIn(1150);
+	// $(".work1").on("mouseover", function(){
+	// 	$(".work1 .work_title").fadeIn();
+	// })
+	// $(".work1").on("mouseout", function(){
+	// 	$(".work1 .work_title").fadeOut();
+	// })
+	$(".work1").hover(function(){
+		$(".work1 .work_title").fadeToggle();
+		$(".work1 .work_descript").fadeToggle();
 	});
-	$(".second_recipe").click(function(){
-		$(".first_recipe").removeClass("active");
-		$(".second_recipe").addClass("active");
-		$(".third_recipe").removeClass("active");
-		$(".second_brief").slideDown(500);
-		$(".first_brief").hide();
-		$(".third_brief").hide();
-		$("#spidercookiesentire").hide();
-		$("#mummypiesentire").hide();
-		$("#pumpkinrollsentire").fadeIn(1150);
+	$(".work2").hover(function(){
+		$(".work2 .work_title").fadeToggle();
+		$(".work2 .work_descript").fadeToggle();
 	});
-	$(".third_recipe").click(function(){
-		$(".first_recipe").removeClass("active");
-		$(".second_recipe").removeClass("active");
-		$(".third_recipe").addClass("active");
-		$(".third_brief").slideDown(500);
-		$(".second_brief").hide();
-		$(".first_brief").hide();
-		$("#pumpkinrollsentire").hide();
-		$("#spidercookiesentire").hide();
-		$("#mummypiesentire").fadeIn(1150);
+	$(".work3").hover(function(){
+		$(".work3 .work_title").fadeToggle();
+		$(".work3 .work_descript").fadeToggle();
+	});
+	$(".work4").hover(function(){
+		$(".work4 .work_title").fadeToggle();
+		$(".work4 .work_descript").fadeToggle();
 	});
 });

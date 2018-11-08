@@ -1,151 +1,123 @@
-/*universal*/
-html {
-	background-color: rgba(0, 0, 0, 0.7);
-	background-image:url("../images/backgroundlit.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-attachment:fixed;
-	overflow-y:scroll;
+* {
+  font-family:"Roboto Mono";
 }
 
 ul {
-	margin:unset;
-	padding:unset;
-	list-style-type:none;
+  margin:unset;
+  padding:unset;
 }
 
-* {
-	font-family:"Quicksand";
-	color:white;
+h3 {
+  padding:unset;
+  margin:unset;
 }
 
-h1 {
-	margin:unset;
-	padding:unset;
+#main_container {
+  width:100%;
+  height:100%;
+  background-color:gray;
 }
 
-/*container*/
-#container {
-	width:1250px;
-	margin-left:20px;
-	margin-top:20px;
-	margin-bottom:20px;
+#about_me {
+  width:30%;
+  height:100vh;
+  background-color:#dcf1e6;
+  position:fixed;
+  text-align:center;
 }
 
-
-/*navigation*/
-
-#nav_menu {
-	text-align:center;
-	width:275px;
-	position:fixed;
+#work_gallery {
+  width: 60%;
+  float:right;
 }
 
-#nav_menu .recipes {
-	text-transform:uppercase;
-	font-size:1.25em;
-	background-color:#F58A07;
-	height:50px;
-	width:230px;
-	margin:10px;
-	color:white;
-	position:relative;
+.work_tile {
+  width:85%;
+  height:300px;
+  margin:10px 0;
+  background-color:aliceblue;
+  display:block;
+  position:relative;
+  overflow:hidden;
 }
 
-.recipes:hover {
-	cursor:pointer;
+.temppic {
+  height:150px;
+  width:150px;
+  border-radius:50%;
+  background-color:white;
+  margin:25px 0;
+  margin-top:175px;
 }
 
-.recipe_title {
-	position:absolute;
-	right:5px;
-	top:14px;
+.myname {
+  background-color:black;
+  color:white;
+  width:150px;
+  padding:15px 0;
+  margin:auto;
+  text-decoration:underline;
+}
+.mydescript {
+  margin-top:10px;
 }
 
-.brief_info_title {
-	width:40px;
+.textboxer {
+  background-color:black;
+  color:white;
+  padding:15px;
+  width:165px;
+  margin-top:20px;
 }
 
-.brief_info {
-	list-style-type:none;
-	width:50px;
-	background-color:#D00000;
-	margin-left:10px;
-	width:230px;
-	color:white;
-	text-align:center;
-	font-size:0.75em;
-	line-height:20px;
-	text-align:right;
+.cookbook {
+  background-color:rgba(0,0,0,.8);
+  background-image:url("https://kennseo94.github.io/images/spidercookies.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
-/*full recipe*/
-#full_recipe_contain {
-	background-color:#F58A07;
-	height:100%;
-	width:950px;
-	float:right;
-	margin-right:30px;
-	margin-top:10px;
+.rugsusa {
+  background-color:rgba(0,0,0,.8);
+  background-image:url("http://i63.tinypic.com/9fnqlz.png");
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
-.ingredients_title {
-	color:white;
-	text-align:center;
+.onezerothree {
+  background-color:rgba(0,0,0,.8);
+  background-image:url("https://ksr-ugc.imgix.net/assets/021/898/204/98aa2d90eb640954b030cdf0f84660ad_original.jpg?ixlib=rb-1.1.0&crop=faces&w=1552&h=873&fit=crop&v=1533377647&auto=format&frame=1&q=92&s=bfbf9ba1b324c19ec8decbe811555075");
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
-.ingredients_list {
-	color:white;
-	list-style-type:none;
-	line-height:15px;
+.guesser {
+  background-color:rgba(0,0,0,.8);
+  background-image:url("http://i63.tinypic.com/2vw9vdf.png");
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
-.ingred_item {
-	margin-top:10px;
-	width:100%;
-	height:40px;
-	text-align:center;
+.work_title {
+  color:white;
+  height:100%;
+  width:100%;
+  background-color:rgba(0,0,0,.5);
+  position:absolute;
+  text-align:center;
+  padding-top:115px;
+  display:none;
 }
 
-.direction_list {
-	list-style-type:none;
+.work_descript {
+  font-size:.5em;
+  display:none;
 }
 
-.information_contain {
-	width:48%;
-	float:left;
-	margin-left:2.5px;
-	margin-right:2.5px;
+/*.work_tile:hover .work_title {
+  display:block;
 }
 
-/*toggle*/
-.hidden {
-	display:none;
-}
-
-.food_pic {
-	width:100%;
-}
-
-.active {
-	background-color:#D00000 !important;
-}
-
-.recipe_name {
-	text-align:center;
-	background-color:#E8580B;
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-.brief_info_title {
-	padding-right:-10px;
-}
-
-.bottom_color {
-	background-color:#E8580B;
-	display:inline-block;
-	width:100%;
-	margin-top:25px;
-	height:50px;
-}
+.work_tile:hover .work_descript {
+  display:block;
+}*/
