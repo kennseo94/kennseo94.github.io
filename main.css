@@ -210,6 +210,9 @@ h1, h2, h3, h4, h5, h6, ul {
   overflow:hidden;
 }
 
+.design_tab:hover, .work_tab:hover {
+  cursor:pointer;
+}
 /**CONTACT DESIGN**/
 .contact_form_name {
   width:300px;
