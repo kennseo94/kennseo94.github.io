@@ -2,6 +2,16 @@
   font-family:"Roboto Mono";
 }
 
+
+/*Useful*/
+.hidden {
+  display:none;
+}
+
+.show {
+  display:block;
+}
+
 h1, h2, h3, h4, h5, h6, ul {
   margin:unset;
   padding:unset;
@@ -176,11 +186,54 @@ h1, h2, h3, h4, h5, h6, ul {
   margin-top:15px;
 }
 
-.skill_icon {
-  text-align:center;
-  margin-top:40px;
-}
-
 .two_sider {
   display:inline-block;
+}
+
+.design_tile {
+  width:85%;
+  height:300px;
+  margin:10px 0;
+  background-color:#dcf1e6;
+  display:block;
+  position:relative;
+  overflow:hidden;
+}
+
+.experience_tile {
+  width:85%;
+  height:300px;
+  margin:10px 0;
+  background-color:#dcf1e6;
+  display:block;
+  position:relative;
+  overflow:hidden;
+}
+
+/**CONTACT DESIGN**/
+.contact_form_name {
+  width:300px;
+  display:block;
+}
+
+.contact_form_email {
+  width:300px;
+  display:block;
+}
+
+.contact_form_subject {
+  width:300px;
+  display:block;
+}
+
+.contact_form_textarea {
+  width:300px;
+  display:block;
+}
+
+#contact_area {
+  width:65%;
+  height:350px;
+  background-color:#dcf1e6;
+  margin-bottom:30px;
 }
